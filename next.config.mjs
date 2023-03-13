@@ -8,6 +8,9 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
+  experimental: {
+    runtime: 'experimental-edge',
+  },
   reactStrictMode: true,
 
   /**
@@ -20,8 +23,5 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  experimental: {
-    runtime: 'edge',
-  }
 };
 export default config;

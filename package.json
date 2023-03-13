@@ -5,10 +5,10 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "patch-package && npm run cloudflare:build && prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "cloudflare:build": "node node_modules/@cloudflare/next-on-pages/bin/index.js --experimental-minify"
+    "cloudflare:build": "node node_modules/@cloudflare/next-on-pages/bin/index.js --experimental-minify",
+    "postinstall": "patch-package && prisma generate"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
