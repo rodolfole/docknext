@@ -1,5 +1,5 @@
-import { NextPage } from "next";
-import { FormEvent, useState } from "react";
+import { type NextPage } from "next";
+import { type FormEvent, useState } from "react";
 
 import { api } from "~/utils/api";
 
