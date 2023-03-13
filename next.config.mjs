@@ -8,9 +8,6 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
-  experimental: {
-    runtime: 'experimental-edge',
-  },
   reactStrictMode: true,
 
   /**

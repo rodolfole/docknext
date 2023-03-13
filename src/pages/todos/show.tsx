@@ -37,7 +37,7 @@ const ShowTodos: NextPage = () => {
                     scope="col"
                     className="px-6 py-4 text-left text-sm font-medium text-gray-900"
                   >
-                    Description
+                    Descripcion
                   </th>
                 </tr>
               </thead>
