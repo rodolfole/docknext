@@ -20,12 +20,16 @@ export const todosRouter = createTRPCRouter({
     }),
 
   getTodos: protectedProcedure.query(async ({ ctx }) => {
-    const todos = await prisma.todo.findMany({
-      where: {
-        userId: ctx.session.user.id,
-      },
-    });
+    try {
+      const todos = await prisma.todo.findMany({
+        where: {
+          userId: ctx.session.user.id,
+        },
+      });
 
-    return todos;
+      return todos;
+    } catch (error) {
+      console.log(error);
+    }
   }),
 });
